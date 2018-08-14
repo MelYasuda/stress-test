@@ -2,10 +2,14 @@
 <html>
   <head>
     <title>stress test</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="container">
-      <form id="stress-testß">
+      <form id="stress-test">
         <div class="form-group">
           <p>Do you have any signs of stress? Check all the signs that apply.:</p>
           <input type="checkbox" name="negative-affect" value="depressed"> Feeling depressed.<br>
@@ -24,7 +28,7 @@
         </div>
 
         <div class="form-group">
-          <p>:</p>
+          <p>Do you do any of the recommended coping methods to deal stress?:</p>
           <input type="checkbox" name="coping-methods" value="headaches"> Meditate.<br>
           <input type="checkbox" name="coping-methods" value="headaches"> Manage your time".<br>
           <input type="checkbox" name="coping-methods" value="headaches"> Pet a cat.<br>
@@ -33,6 +37,15 @@
         </div>
        <button type="submit">Submit Survey</button>
       </form>
+      <span id="result-one">
+        <p><b>Your stress level is so high you should go see a therapist!</b></p>
+      </span>
+      <span id="result-two">
+        <p><b>Your stress level is moderate. You should try more of the recommended activities.</b></p>
+      </span>
+      <span id="result-three">
+        <p><b>Good job! Your stress level is low. Keep the good work</b></p>
+      </span>
     </div>
   </body>
 </html>
